@@ -1,10 +1,11 @@
-
+import tensorflow as tf
+from sklear.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
 
-churn_model = tensorflow.keras.models.load_model("churn_model.h5")
+churn_model = tf.keras.models.load_model("churn_model.h5")
 
 #Load all the pickle files:-
 with open("le_gender.pkl","rb") as file:
