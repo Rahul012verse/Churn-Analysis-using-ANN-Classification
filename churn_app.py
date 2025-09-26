@@ -1,5 +1,4 @@
-pip install -U scikit-learn
-pip install tensorflow
+
 import tensorflow
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
@@ -64,6 +63,7 @@ if prediction > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
 
 
 
