@@ -1,5 +1,4 @@
-from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
-import tensorflow
+
 import pandas as pd
 import numpy as np
 import pickle
@@ -62,6 +61,7 @@ if prediction > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
 
 
 
