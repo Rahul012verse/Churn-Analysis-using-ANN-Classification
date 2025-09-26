@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
-import tensorflow as tf
+import tensorflow
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 
-churn_model = tf.keras.models.load_model("churn_model.h5")
+churn_model = tensorflow.keras.models.load_model("churn_model.h5")
 
 #Load all the pickle files:-
 with open("le_gender.pkl","rb") as file:
@@ -62,6 +62,7 @@ if prediction > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
 
 
 
